@@ -1,0 +1,93 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+
+// Medium devices (tablets, 768px and up)
+//@media only screen and (min-width: 768px), only screen and (min-device-width: 768px){
+@media (min-width: 768px) {
+/* MENU */
+  .navbar-collapse {
+    height: 90px;
+    text-align: center;
+  }
+  .navbar-right{
+    height: 90px;
+    width: 440px;
+    right: 0;
+    padding-top: 10px;
+    display: flex;
+  }
+  #navigation {
+    height: 90px;
+  }
+  .nav>li>a {
+    padding: 10px 9px;
+  }
+/* END MENU */
+
+  .slider-button{
+    padding: 20px;
+    bottom: 25px;
+    right: 25px;
+  }
+  .mobile-brands {
+    img{
+      width:90px;
+      height: 40px;
+    }
+  }
+
+  /* CONTENT SECTION */
+  .content-nav {
+    a {
+      padding: 27px 27px;
+
+    }
+  }
+  /* END CONTENT SECTION */
+
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px){
+/* MENU */
+  .navbar-right{
+    width: unset;
+  }
+  .navbar-right {
+    padding-top: 20px;
+  }
+  .nav>li>a {
+    padding: 10px 15px;
+  }
+/*END MENU */
+  .slider-button{
+    padding: 25px;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .mobile-brands {
+    img{
+      width: 150px;
+      height: 66px;
+    }
+  }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px){
+  .slider-button{
+    padding: 25px;
+    bottom: 50px;
+    right: 50px;
+  }
+  .mobile-brands {
+    img{
+      width: 180px;
+      height: 80px;
+    }
+  }
+
+}

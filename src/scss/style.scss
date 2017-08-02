@@ -1,0 +1,174 @@
+@import "hamburger";
+
+$primaryTekstColor: #222222;
+$footerTekstColor: #9d9d9d;
+$menuTekstColor: black;
+$primaryTekstSize: 20px;
+$sizeColorUnderlineAndBorder:3px;
+
+body, html {
+  color: black;
+  font-family: 'Roboto', serif;
+}
+a {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* MENU */
+.navbar-collapse {
+//  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+//  margin-left: -17px;
+//  margin-right: -17px;
+//  margin-top: -1px;
+  a{
+    color: black;
+  }
+}
+.menu {
+  z-index: 20;
+  position: relative;
+  height: 90px;
+  box-shadow: 0 0 6px 0px #b0b0b0;;
+  .navbar-header{
+    height: 90px;
+  }
+  button {
+    padding-top: 20px;
+  }
+}
+.navbar-brand{
+  position: absolute;
+  left: 0;
+}
+.nav>li>a {
+  padding: 10px 9px;
+  transition: 2s all;
+  border-radius: 20px; // BORDER RADIUS VISIBLE ON HOVER
+  }
+
+/* END MENU */
+
+/* SLIDER SECTION */
+.slider{
+  .container{
+    position: relative;
+  }
+}
+.slider-button{
+  border: 0;
+  background-color: #00d200;
+  padding: 18px;
+  color: #fffcfb;
+  font-weight: bold;
+  position:absolute;
+  bottom: 15px;
+  right: 15px;
+  transition: 1s all;
+  &:focus{
+    border:0;
+    outline:0;
+  }
+  &:hover{
+    transform: scale(1.1);
+  }
+
+}
+
+/* END SLIDER SECTION */
+
+/* MOBILE-BRANDS SECTION */
+.mobile-brands {
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  img{
+    transition: 2s all;
+    width:90px;
+    height: 40px;
+  }
+  img:hover{
+    transform: scale(0.9);
+  }
+}
+/* END MOBILE-BRANDS SECTION */
+
+/* CONTENT SECTION */
+.content--nav {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  height: 76px;
+  a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 27px 10px;
+    &:hover{
+      text-decoration: none;
+      color: white;
+      background-color:#00d200;
+
+    }
+
+  }
+  a:hover::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 5px solid #fcfcfc;
+    margin-top: 44px;
+    margin-left: 20px;
+  }
+}
+
+.content--phones{
+  height: 300px;
+}
+.content--container{
+  text-align: center;
+}
+.content--button{
+  border: 0;
+  background-color: #00d200;
+  padding: 18px;
+  margin:30px;
+  color: #fffcfb;
+  font-weight: bold;
+  transition: 1s all;
+  &:focus{
+    border:0;
+    outline:0;
+  }
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+/* END CONTENT SECTION */
+
+/* FOOTER */
+.footer{
+  height: 150px;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  img{
+    margin:30px;
+  }
+}
+
+/* END FOOTER */
+
+@import "media";

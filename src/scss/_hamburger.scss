@@ -1,0 +1,32 @@
+/* HAMBURGER */
+
+.navbar-toggle {
+  overflow: hidden;
+
+  .icon-bar {
+    transition: opacity, transform;
+    transition-duration: 600ms;
+  }
+}
+
+.navbar-toggle:not(.collapsed) {
+
+  .icon-bar:nth-child(2) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .icon-bar:nth-child(3) {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .icon-bar:nth-child(4) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+.navbar-toggle .icon-bar {
+  background-color: black!important;
+}
+
+
+/* hamburger end */
