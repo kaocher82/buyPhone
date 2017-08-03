@@ -4,6 +4,15 @@
 
 // Medium devices (tablets, 768px and up)
 //@media only screen and (min-width: 768px), only screen and (min-device-width: 768px){
+
+@media(max-width: 340px){
+  .navbar-brand{
+    img{
+      height: 40px;
+      width: 160px;
+    }
+  }
+}
 @media (min-width: 768px) {
 /* MENU */
   .navbar-collapse {
@@ -11,8 +20,6 @@
     text-align: center;
   }
   .navbar-right{
-    height: 90px;
-    width: 440px;
     right: 0;
     padding-top: 10px;
     display: flex;
@@ -22,10 +29,11 @@
   }
   .nav>li>a {
     padding: 10px 9px;
+    font-size: 10px;
   }
 /* END MENU */
 
-  .slider-button{
+  .main-button__slider{
     padding: 20px;
     bottom: 25px;
     right: 25px;
@@ -35,18 +43,31 @@
       width:90px;
       height: 40px;
     }
+
+
   }
 
   /* CONTENT SECTION */
-  .content-nav {
+  .content--nav {
     a {
       padding: 27px 27px;
-
-    }
   }
+
   /* END CONTENT SECTION */
 
 
+}
+  .phone-box{
+    width:50%;
+
+  }
+
+  .opacityFlag{
+    opacity:0;
+  }
+  .widthFlag{
+    width:100%;
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px){
@@ -59,9 +80,11 @@
   }
   .nav>li>a {
     padding: 10px 15px;
+    font-size: 14px;
+
   }
 /*END MENU */
-  .slider-button{
+  .main-button__slider{
     padding: 25px;
     bottom: 40px;
     right: 40px;
@@ -73,12 +96,17 @@
       height: 66px;
     }
   }
+  .phone-box{
+    width:33%;
+
+  }
+
 }
 
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px){
-  .slider-button{
+  .main-button__slider{
     padding: 25px;
     bottom: 50px;
     right: 50px;
@@ -88,6 +116,10 @@
       width: 180px;
       height: 80px;
     }
+  }
+  .phone-box{
+    width:25%;
+
   }
 
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Warstwa_1"
+   data-name="Warstwa 1"
+   viewBox="0 0 22.68 22.68"
+   version="1.1"
+   sodipodi:docname="icon cart_white.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata4494">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4492" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview4490"
+     showgrid="false"
+     inkscape:zoom="23.059964"
+     inkscape:cx="11.34"
+     inkscape:cy="11.34"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Warstwa_1" />
+  <path
+     d="M4.67,19.12a2.22,2.22,0,1,0,2.22-2.22A2.22,2.22,0,0,0,4.67,19.12Zm11.11,0A2.22,2.22,0,1,0,18,16.89,2.22,2.22,0,0,0,15.78,19.12ZM8.61,13.86l12.3-3.51a0.63,0.63,0,0,0,.43-0.57V3.67H5.67V1.78a0.45,0.45,0,0,0-.44-0.44H1.78a0.45,0.45,0,0,0-.44.44V3.56H3.5L5.68,13.62l0.21,1v1.67a0.45,0.45,0,0,0,.44.44H20.89a0.45,0.45,0,0,0,.44-0.44V14.67H8.84C7.56,14.67,7.54,14.17,8.61,13.86Z"
+     style="fill:#ffffff"
+     id="path4487" />
+</svg>
