@@ -156,7 +156,7 @@ img {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 5px solid #fcfcfc;
-    margin-top: 44px;
+    margin-top: 45px;
     margin-left: 20px; }
 
 .content--phones {
@@ -188,26 +188,19 @@ img {
   height: 415px;
   background: #f4f4f4;
   text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
   position: relative; }
   .phone-box p {
     font-weight: bold; }
   .phone-box .phone-box--name {
-    position: absolute;
-    -ms-transform: translateY(-150px);
-        transform: translateY(-150px); }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative; }
+  .phone-box .phoneImg {
+    width: 86px;
+    height: 168px; }
   .phone-box .phone-box--price {
-    position: absolute;
-    -ms-transform: translateY(150px);
-        transform: translateY(150px);
-    color: black; }
+    padding-top: 50px;
+    position: relative; }
   .phone-box .phone-box-more {
     width: 100%;
     height: 490px;
@@ -218,7 +211,8 @@ img {
     visibility: hidden;
     display: -ms-flexbox;
     display: flex;
-    z-index: 5; }
+    z-index: 5;
+    left: 0px; }
   .phone-box:hover .phone-box-more {
     visibility: visible; }
   .phone-box:hover .phone-box--name {
@@ -257,19 +251,19 @@ img {
 .phone-box-more--buttons {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: end;
       align-items: flex-end;
   padding-bottom: 20px;
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  left: 0; }
 
 .phone-box-more--text {
   color: white;
   width: 100%;
-  position: absolute;
   padding-bottom: 75px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -301,7 +295,9 @@ img {
 @media (max-width: 340px) {
   .navbar-brand img {
     height: 40px;
-    width: 160px; } }
+    width: 160px; }
+  .content--nav a {
+    font-size: 12px; } }
 
 @media (min-width: 768px) {
   /* MENU */

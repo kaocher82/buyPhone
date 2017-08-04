@@ -155,7 +155,7 @@ background: none;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 5px solid #fcfcfc;
-    margin-top: 44px;
+    margin-top: 45px;
     margin-left: 20px;
   }
 }
@@ -186,10 +186,10 @@ background: none;
   background: rgb(244,244,244);
 //  background: linear-gradient(to right, rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
   position: relative;
 
   p {
@@ -197,14 +197,19 @@ background: none;
   }
 
   .phone-box--name{
-    position:absolute;
-    transform: translateY(-150px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .phoneImg{
+    width:86px;
+    height: 168px;
+
   }
 
   .phone-box--price{
-    position:absolute;
-    transform: translateY(150px);
-    color:black;
+    padding-top: 50px;
+    position: relative;
   }
   .phone-box-more{
     width:100%;
@@ -216,6 +221,7 @@ background: none;
     visibility: hidden;
     display: flex;
     z-index: 5;
+    left:0px
   }
   &:hover .phone-box-more {
    visibility: visible
@@ -228,6 +234,7 @@ background: none;
     z-index: 30;
     color: white;
   }
+
 
 }
 // different backgorund on row
@@ -261,17 +268,18 @@ background: none;
 
 .phone-box-more--buttons{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-end;
   padding-bottom: 20px;
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
 }
 .phone-box-more--text{
   color:white;
   width: 100%;
-  position: absolute;
+//  position: absolute;
   padding-bottom: 75px;
   align-self: center;
 }

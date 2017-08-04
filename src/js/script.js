@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       printPhone: function (data){
 
         for (i=0; i < data.length; i++){
-          var html = '<div data-id="%id%" class="phone-box"><p class="phone-box--name">%name%</p><img src="img/telefon.png" alt="telefon"><p class="phone-box--price">%price% PLN</p><div class="phone-box-more"><div class="phone-box-more--text"><p>Ekran %ekran%</p><p>Aparat %aparat%</p><p>Bateria %bateria%</p><p>%ram%</p></div><div class="phone-box-more--buttons"><button class="main-button main-button__black"><img class="svg cart" src="img/icon cart.svg" alt="card" ></button><button class="main-button main-button__white">PORÓWNAJ</button></div></div></div>';
+          var html = '<div data-id="%id%" class="phone-box"><p class="phone-box--name">%name%</p><img class="phoneImg" src="img/telefon.png" alt="telefon"><p class="phone-box--price">%price% PLN</p><div class="phone-box-more"><div class="phone-box-more--text"><p>Ekran %ekran%</p><p>Aparat %aparat%</p><p>Bateria %bateria%</p><p>%ram%</p></div><div class="phone-box-more--buttons"><button class="main-button main-button__black"><img class="svg cart" src="img/icon cart.svg" alt="card" ></button><button class="main-button main-button__white">PORÓWNAJ</button></div></div></div>';
           
           var newHtml = html.replace('%name%', data[i].name);
           var newHtml = newHtml.replace('%id%', data[i].id);
