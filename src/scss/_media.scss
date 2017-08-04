@@ -1,9 +1,16 @@
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
+//gradient variable
 
-// Medium devices (tablets, 768px and up)
-//@media only screen and (min-width: 768px), only screen and (min-device-width: 768px){
+@mixin background-left(){
+  background: linear-gradient(to left, rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+}
+@mixin background-right(){
+  background: linear-gradient(to right, rgba(244,244,244,1) 0%,rgba(255,255,255,1) 100%);
+}
+
+
 
 @media(max-width: 340px){
   .navbar-brand{
@@ -11,6 +18,9 @@
       height: 40px;
       width: 160px;
     }
+  }
+  .content--nav a{
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) {
@@ -68,6 +78,15 @@
   .widthFlag{
     width:100%;
   }
+  // different backgorund in row
+  .phone-box:nth-of-type(1n){
+    @include background-left();
+  }
+  .phone-box:nth-of-type(4n+1), .phone-box:nth-of-type(4n+2){
+    @include background-right();
+  }
+  // end different backgorund in row
+  
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px){
@@ -100,7 +119,16 @@
     width:33%;
 
   }
-
+  
+  // different backgorund in row
+  .phone-box:nth-of-type(1n){
+    @include background-left();
+  }
+  .phone-box:nth-of-type(6n+1), .phone-box:nth-of-type(6n+2), .phone-box:nth-of-type(6n+3){
+    @include background-right();
+  }
+  // end different backgorund in row
+  
 }
 
 
@@ -119,7 +147,14 @@
   }
   .phone-box{
     width:25%;
-
   }
+  // different backgorund in row
+  .phone-box:nth-of-type(1n){
+    @include background-left();
+  }
+  .phone-box:nth-of-type(8n+1), .phone-box:nth-of-type(8n+2), .phone-box:nth-of-type(8n+3), .phone-box:nth-of-type(8n+4){
+    @include background-right();
+  }
+  // end different backgorund in row
 
 }

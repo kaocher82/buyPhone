@@ -156,7 +156,7 @@ img {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 5px solid #fcfcfc;
-    margin-top: 44px;
+    margin-top: 45px;
     margin-left: 20px; }
 
 .content--phones {
@@ -187,28 +187,20 @@ img {
   width: 100%;
   height: 415px;
   background: #f4f4f4;
-  background: linear-gradient(to right, #f4f4f4 0%, white 100%);
   text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
   position: relative; }
   .phone-box p {
     font-weight: bold; }
   .phone-box .phone-box--name {
-    position: absolute;
-    -ms-transform: translateY(-150px);
-        transform: translateY(-150px); }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative; }
+  .phone-box .phoneImg {
+    width: 86px;
+    height: 168px; }
   .phone-box .phone-box--price {
-    position: absolute;
-    -ms-transform: translateY(150px);
-        transform: translateY(150px);
-    color: black; }
+    padding-top: 50px;
+    position: relative; }
   .phone-box .phone-box-more {
     width: 100%;
     height: 490px;
@@ -219,7 +211,8 @@ img {
     visibility: hidden;
     display: -ms-flexbox;
     display: flex;
-    z-index: 5; }
+    z-index: 5;
+    left: 0px; }
   .phone-box:hover .phone-box-more {
     visibility: visible; }
   .phone-box:hover .phone-box--name {
@@ -229,15 +222,24 @@ img {
     z-index: 30;
     color: white; }
 
+.phone-box:nth-of-type(2n+1) {
+  background: linear-gradient(to right, #f4f4f4 0%, white 100%); }
+
+.phone-box:nth-of-type(2n) {
+  background: linear-gradient(to left, #f4f4f4 0%, white 100%); }
+
 .main-button__black {
   background-color: #000000;
   width: 40%;
   height: 40px;
   padding: 10px; }
 
-.card {
+.cart {
   width: 25px;
   height: 25px; }
+
+.cart path {
+  fill: #ffffff !important; }
 
 .main-button__white {
   background-color: #f3f4f6;
@@ -249,19 +251,19 @@ img {
 .phone-box-more--buttons {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: end;
       align-items: flex-end;
   padding-bottom: 20px;
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  left: 0; }
 
 .phone-box-more--text {
   color: white;
   width: 100%;
-  position: absolute;
   padding-bottom: 75px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -281,11 +283,21 @@ img {
   .footer img {
     margin: 30px; }
 
+.logo-white path, polygon {
+  fill: #ffffff !important; }
+
+.logo-white {
+  height: 34px;
+  width: 155px;
+  margin: 30px; }
+
 /* END FOOTER */
 @media (max-width: 340px) {
   .navbar-brand img {
     height: 40px;
-    width: 160px; } }
+    width: 160px; }
+  .content--nav a {
+    font-size: 12px; } }
 
 @media (min-width: 768px) {
   /* MENU */
@@ -320,7 +332,11 @@ img {
   .opacityFlag {
     opacity: 0; }
   .widthFlag {
-    width: 100%; } }
+    width: 100%; }
+  .phone-box:nth-of-type(1n) {
+    background: linear-gradient(to left, #f4f4f4 0%, white 100%); }
+  .phone-box:nth-of-type(4n+1), .phone-box:nth-of-type(4n+2) {
+    background: linear-gradient(to right, #f4f4f4 0%, white 100%); } }
 
 @media (min-width: 992px) {
   /* MENU */
@@ -340,7 +356,11 @@ img {
     width: 150px;
     height: 66px; }
   .phone-box {
-    width: 33%; } }
+    width: 33%; }
+  .phone-box:nth-of-type(1n) {
+    background: linear-gradient(to left, #f4f4f4 0%, white 100%); }
+  .phone-box:nth-of-type(6n+1), .phone-box:nth-of-type(6n+2), .phone-box:nth-of-type(6n+3) {
+    background: linear-gradient(to right, #f4f4f4 0%, white 100%); } }
 
 @media (min-width: 1200px) {
   .main-button__slider {
@@ -351,4 +371,8 @@ img {
     width: 180px;
     height: 80px; }
   .phone-box {
-    width: 25%; } }
+    width: 25%; }
+  .phone-box:nth-of-type(1n) {
+    background: linear-gradient(to left, #f4f4f4 0%, white 100%); }
+  .phone-box:nth-of-type(8n+1), .phone-box:nth-of-type(8n+2), .phone-box:nth-of-type(8n+3), .phone-box:nth-of-type(8n+4) {
+    background: linear-gradient(to right, #f4f4f4 0%, white 100%); } }
