@@ -1,5 +1,4 @@
 # buyPhone
 
-### working in progress
 
-<a href="https://wkra.github.io/buyPhone/dist/">DEMO</a>
+### <a href="http://wkrawiec.pl/buyPhone/">DEMO</a>
